@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    # url: https://7e942fbd.us2a.app.preset.io:443/r/2
+    url: https://ca8e3557.us1a.app.preset.io/superset/dashboard/8/?native_filters_key=11g_G8VPPZbld6E8zgIVL7GmlxSP_JvfMmbqikVU4RpNCWfGjmPULWs4W_x4E8HQ
+    description: Executive Dashboard about Aribnb listings and hosts
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Woojin
+      email: ks10319@naver.com
